@@ -1,0 +1,8 @@
+
+|	java:S116"[Rename this field "MainAbilitySlice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ÌĞüÿÿÿÿ8şÖŞü/
+h	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úœï ûÿÿÿÿ
+1
+java:S3626J"Remove this redundant jump.(ûÁİ…
+<	java:S1316""Add a default case to this switch.(×ö³–úÿÿÿÿ
+f
+java:S13016"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ

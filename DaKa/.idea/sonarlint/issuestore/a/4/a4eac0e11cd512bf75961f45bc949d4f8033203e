@@ -1,0 +1,30 @@
+
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(È»§ã8íäŸü/
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÂšÅïùÿÿÿÿ8îäŸü/
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(°ë¯8îäŸü/
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(©úÛùûÿÿÿÿ8îäŸü/
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(âÙ¹şÿÿÿÿ8îäŸü/
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ù‚Ù¦şÿÿÿÿ8îäŸü/
+j	java:S100]"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡±—8åŸü/
+o	java:S100a"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™¹Æ¾ûÿÿÿÿ8åŸü/
+j	java:S100e"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û´º¥8‘åŸü/
+o	java:S100i"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üÍÁ®şÿÿÿÿ8‘åŸü/
+o	java:S100m"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÑÄöûÿÿÿÿ8’åŸü/
+o	java:S100q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚¾¥´ıÿÿÿÿ8“åŸü/
+j	java:S100u"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÒÆÃ8”åŸü/
+o	java:S100y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼½ÎÂúÿÿÿÿ8•åŸü/
+j	java:S100}"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·‘Õì8•åŸü/
+k	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á—¼8–åŸü/
+M
+java:S1144$"1Remove this unused private "writeCounter" method.(„ÈÄ8—åŸü/
+R
+java:S1144E"0Remove this unused private "readCounter" method.(£Ô¬’üÿÿÿÿ8—åŸü/
+e
+java:S1192 "HDefine a constant instead of duplicating this literal "],key=[" 3 times.(”–¸ã8˜åŸü/
+i
+java:S1192 "LDefine a constant instead of duplicating this literal "],message=[" 3 times.(”–¸ã8˜åŸü/
+p
+java:S1104"SMake context a static final constant or non-public and provide accessors if needed.(Òò®­8™åŸü/
+J
+java:S1444"-Make this "public static context" field final(Òò®­8™åŸü/
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Åªëİüÿÿÿÿ8™åŸü/

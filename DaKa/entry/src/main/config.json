@@ -1,0 +1,87 @@
+{
+  "app": {
+    "bundleName": "com.xcl.location",
+    "vendor": "xcl",
+    "version": {
+      "code": 326,
+      "name": "1.0.1.220326"
+    }
+  },
+  "deviceConfig": {
+    "default": {
+      "supportBackup": true
+    }
+  },
+  "module": {
+    "package": "com.xcl.location",
+    "name": ".MyApplication",
+    "mainAbility": "com.xcl.location.MainAbility",
+    "deviceType": [
+      "phone",
+      "tablet"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.xcl.location.MainAbility",
+        "icon": "$media:icon",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "permissions": [
+          "com.huawei.agconnect.core.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.huawei.agconnect.core.provider.AGConnectInitializeAbility",
+        "type": "data",
+        "uri": "dataability://com.xcl.location.location.AGConnectInitializeAbility"
+      }
+    ],
+    "metaData": {
+      "customizeData": [
+        {
+          "name": "hwc-theme",
+          "extra": "",
+          "value": "androidhwext:style/Theme.Emui.Wallpaper.NoTitleBar"
+        }
+      ]
+    },
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.LOCATION",
+        "reason": "定位",
+        "usedScene": {
+          "ability": [
+            "com.xcl.location.MainAbility"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO",
+        "reason": "Allows programs to obtain network information status"
+      },
+      {
+        "name": "ohos.permission.LOCATION_IN_BACKGROUND"
+      }
+    ]
+  }
+}
