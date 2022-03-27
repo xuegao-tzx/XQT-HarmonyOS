@@ -11,8 +11,6 @@ g
 .entry/src/main/java/com/xcl/location/XLog.java,a\4\a49d04c34d269757f710cdd66ee499b30ca4d012
 e
 5entry/src/main/java/com/xcl/location/MainAbility.java,4\6\4658bbfeed30bc3c16d89bdde88d0ce1bb94d3a7
-H
-entry/proguard-rules.pro,1\a\1a0bfe7a027837ed647b6bd5b6e2500c8555362e
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 B
@@ -21,17 +19,19 @@ l
 <entry/src/main/java/com/xcl/location/Util/MyToastDialog.java,b\2\b21eebb6b040e2b10cd428205c5acd1f68cc6d50
 b
 2entry/src/main/java/com/xcl/location/Net/DXJX.java,2\5\25dacbaab99cc1fe7e73d185785207a3337590fb
-b
-2entry/src/main/java/com/xcl/location/Net/TJXX.java,c\e\cea9463d59754ba3cdc565e6279149e7440edadf
-a
-1entry/src/main/java/com/xcl/location/Net/Wan.java,1\5\15d8bcbfc11a5f476138f9bcb53e2052e1a9dfbf
-J
-entry/src/main/config.json,1\0\10f965cf51fe14a5ef0ca2ebefb1bd7e4607eeb2
 M
 entry/agconnect-services.json,9\c\9c0629d9ee39e937c45ba4e3206cabded9f4c3be
 L
 jianjia/src/main/config.json,0\f\0fc04922cd9a34622b859cd4d1a67a89f33da940
 <
 package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
+J
+entry/src/main/config.json,1\0\10f965cf51fe14a5ef0ca2ebefb1bd7e4607eeb2
+b
+2entry/src/main/java/com/xcl/location/Net/TJXX.java,c\e\cea9463d59754ba3cdc565e6279149e7440edadf
+a
+1entry/src/main/java/com/xcl/location/Net/Wan.java,1\5\15d8bcbfc11a5f476138f9bcb53e2052e1a9dfbf
+H
+entry/proguard-rules.pro,1\a\1a0bfe7a027837ed647b6bd5b6e2500c8555362e
 p
 @entry/src/main/java/com/xcl/location/slice/MainAbilitySlice.java,e\0\e0da17fc7f5e236564b670ddce19a468201781e3

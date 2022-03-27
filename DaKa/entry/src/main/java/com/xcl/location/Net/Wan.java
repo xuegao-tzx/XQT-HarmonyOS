@@ -33,4 +33,15 @@ public interface Wan {
     @POST("/Home/Monitor/monitor_add")
     @FormUrlEncoded
     Call<TJXX> postDKXX(@FieldMap Map<String, String> param);
+
+    /**
+     * Post cxdkxx call.
+     *
+     * @param param the param
+     * @return the call
+     */
+    @BaseUrl("https://yx.ty-ke.com/")
+    @POST("/Home/Monitor/monitor_cha")
+    @FormUrlEncoded
+    Call<TJXX> postCXDKXX(@FieldMap Map<String, String> param);
 }

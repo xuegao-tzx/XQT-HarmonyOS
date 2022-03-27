@@ -4,8 +4,9 @@
 
 **本项目仅用于个人知识积累供大家学习交流分享，请勿将成果用于非法用途，建议您设计测试完成后进行正规的打卡操作。因使用本技术研究带来的一切后果，由使用者自行负责。出现任何问题均与作者无关。**
 
+**[版本更新地址](https://www.xuegao-xcl.tech/demo/38.html)**
 
-实现原理:
+### 实现原理:
 
 1. 首先我们通过HMS服务调用系统定位模块来获取当前设备的详细经纬度
 2. 我们使用从[百度地图官网](https://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-geocoding-abroad)申请的AK密钥，来使用全球逆地理编码服务
@@ -14,7 +15,7 @@
 5. 最后根据返回值即可得到打卡成功的返回值
 
 
-使用方法:
+### 使用方法:
 
 1. 下载本项目到本地
 2. 首先你要到华为开发者平台申请密钥，以便于真机调试，[参考官方方法](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404)，并且在应用API处打开地理位置的开关，并且按照官网指引下载agconnect-services.json文件，并参考[这个](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/harmonyos-java-config-app-signing-0000001199536987),并在:
@@ -41,10 +42,11 @@
         "type": "data",
         "uri": "dataability://你的打包名.location.AGConnectInitializeAbility"
 }
-`，还有记得在MainAbilitySlice.java中的第184行左右TODO左侧处填写你自己在百度地图控制台申请的AK
+`，还有记得在MainAbilitySlice.java中的第185行左右TODO左侧处填写你自己在百度地图控制台申请的AK
 4. 最后你就可以在自己的真机上运行了
 
 
-免责声明
+### 免责声明
 
 **本项目所有信息都仅用于个人知识积累供大家学习交流分享，请勿将成果用于非法用途，建议您设计测试完成后进行正规的打卡操作。因使用本技术研究带来的一切后果，由使用者自行负责。出现任何问题均与作者无关。**
+

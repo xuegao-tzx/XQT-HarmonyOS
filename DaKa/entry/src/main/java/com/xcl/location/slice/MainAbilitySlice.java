@@ -181,6 +181,7 @@ public class MainAbilitySlice extends AbilitySlice {
         Button stopLocatingButton = (Button) findComponentById(ResourceTable.Id_stop_locating);
         Map<String, String> url = new HashMap<String, String>();
         Map<String, String> url1 = new HashMap<String, String>();
+        Map<String, String> url2 = new HashMap<String, String>();
         url.put("ak", "此处填写你的百度地图ak");//TODO:百度地图ak
         url.put("output", "json");
         url.put("coordtype", "wgs84ll");
@@ -304,6 +305,9 @@ public class MainAbilitySlice extends AbilitySlice {
         daka.setClickedListener(new Component.ClickedListener() {
             @Override
             public void onClick(Component component) {
+                if(Preference_RW.ff1_r().equals("")||Preference_RW.ff1_r()==null||Preference_RW.ff1_r().equals("0")){
+                    Preference_RW.ff1_w(input.getText());
+                }else{}
                 url1.put("mobile", Preference_RW.ff1_r());
                 url1.put("city", city);
                 url1.put("jk_type", "健康");
@@ -314,18 +318,46 @@ public class MainAbilitySlice extends AbilitySlice {
                 url1.put("wc_type", "否");
                 url1.put("is_verify", "0");
                 url1.put("province", province);
-                MyApplication.getInstance().getWan().postDKXX(url1).enqueue(new Callback<TJXX>() {
+                url2.put("mobile", Preference_RW.ff1_r());
+                url2.put("days", "null");
+                url2.put("daka_status", "null");
+                MyApplication.getInstance().getWan().postCXDKXX(url2).enqueue(new Callback<TJXX>(){
                     @Override
                     public void onResponse(Call<TJXX> call, Response<TJXX> response) {
-                        ShowDialog("打卡成功!");
-                        XLog.info(label, response.body().msg);
-                        result.setText(response.body().msg);
+
+                        if (response.isSuccessful()) {
+                            if(response.body().code.equals("200")){
+                                ShowDialog("当前时间段您已经打过卡了...");
+                                result.setText("当前时间段您已经完成打卡!");
+                            }else if(response.body().code.equals("404")){
+                                MyApplication.getInstance().getWan().postDKXX(url1).enqueue(new Callback<TJXX>() {
+                                    @Override
+                                    public void onResponse(Call<TJXX> call, Response<TJXX> response) {
+                                        if (response.isSuccessful()) {
+                                            ShowDialog("打卡成功!");
+                                            XLog.info(label, response.body().msg);
+                                            result.setText(response.body().msg);
+                                        }else{
+                                            ShowDialog("打卡失败，请稍后重试...");
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onFailure(Call<TJXX> call, Throwable t) {
+                                        XLog.error(label, t.getMessage());
+                                        ShowDialog("打卡失败!错误原因:" + t.getMessage());
+                                    }
+                                });
+                            }
+                        }else{
+                            XLog.error(label, "访问失败！");
+                        }
                     }
 
                     @Override
                     public void onFailure(Call<TJXX> call, Throwable t) {
                         XLog.error(label, t.getMessage());
-                        ShowDialog("打卡失败!错误原因:" + t.getMessage());
+                        ShowDialog("查询失败!错误原因:" + t.getMessage());
                     }
                 });
             }
