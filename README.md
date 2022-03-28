@@ -1,4 +1,6 @@
 # 校企通鸿蒙版
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fxuegao-tzx%2FXQT-HarmonyOS.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fxuegao-tzx%2FXQT-HarmonyOS?ref=badge_shield)
+
 
 **这是校企通鸿蒙版快捷打卡魔改版，仅仅用于学习技术交流，请勿用于商业目的以及日常打卡，日常打卡还请下载校企通原版进行登录后如实填写自己的信息来打卡。**
 
@@ -50,3 +52,7 @@
 
 **本项目所有信息都仅用于个人知识积累供大家学习交流分享，请勿将成果用于非法用途，建议您设计测试完成后进行正规的打卡操作。因使用本技术研究带来的一切后果，由使用者自行负责。出现任何问题均与作者无关。**
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fxuegao-tzx%2FXQT-HarmonyOS.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fxuegao-tzx%2FXQT-HarmonyOS?ref=badge_large)
